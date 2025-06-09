@@ -6,11 +6,11 @@
 -->
 <html>
 	<head>
-		<title>ISE 2023 Message sent</title>
+		<title>ISE 2023 Registration</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon_io/favicon.ico">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon_io/favicon.ico">
 	</head>
 	<body class="is-preload">
 
@@ -18,13 +18,12 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
+					<header id="header">
 
 						<!-- Logo -->
 							<div class="logo">
 								<a href="index.html"><strong>ISE</strong> Chicago 2023</a>
 							</div>
-
 						<!-- Nav -->
                         <nav id="nav">
                             <ul>
@@ -84,38 +83,47 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="registration.html">Registration</a></li>
+                                <li class="current"><a href="registration.html">Registration</a></li>
                                 <li><a href="travelgrant.html">Travel Grant</a></li>
                                 <li><a href="program.html">Program</a></li>
                             </ul>
                         </nav>
 					</header>
 
+
 				<!-- Section -->
 					<section class="main alt">
 						<header>
-							<h1>Message sent</h1>
-							<p>Thank you for your message</p>
+							<h1>Registration</h1>
+                            <p>Registration for the ISE 2023 conference will open May 1st.<br>
+                                Early bird registration closes June 15th. (extended until June 30th)<br>
+                                Registration closes August 22nd.
+                            </p>
+                            <p><b>Registration costs:</b><br>
+                                Early bird, reduced rate: $280<br>
+                                Early bird, full rate: $400<br>
+                                Late bird, reduced rate: $330<br>
+                                Late bird, full rate: $450<br>
+                                Registration includes welcome reception, conference dinner, lunch, coffee breaks, and admission to the Field Museum.
+                            </p>
+                            <p>Reduced registration fees apply to undergraduate students, graduate students, and postdoctoral researchers with a maximum of three years of experience. Please use code <b>ISESTU23</b> at the checkout.</p>
+                            <p>Please note that tickets for the event are limited and will be allocated on a first-come, first-served basis.</p>
+                            <p><b>Please complete your registration by purchasing a ticket for the "International Society of Endocytobiology (ISE) Conference" through the Field Museum ticket shop.</b></p>
+                            <p class="actions">
+                                <a href="https://buy.acmeticketing.com/orders/485/tickets?eventId=644830f78e163f5296f8811b&date=2023-09-10T18:00:00-05:00&cart=true" target="_blank"
+                                    class="button icon solid fa-download">Registration</a>
+                            </p>
 						</header>
-						<div class="inner style2">
-							<?php
-								if ($_SERVER["REQUEST_METHOD"] == "POST") {
-									$name = $_POST["name"];
-									$email = $_POST["email"];
-									$message = $_POST["message"];
-
-									$to = "ise2023us@gmail.com";
-									$subject = "New message from $name";
-									$body = "From: $name\nEmail: $email\nMessage:\n$message";
-
-									if (mail($to, $subject, $body)) {
-										echo "<p>Thank you for your message, $name. We'll get back to you as soon as possible. You can also email us directly at ise2023us@gmail.com.</p>";
-									} else {
-										echo "<p>Sorry, there was a problem sending your message. Please try again later or email us directly under ise2023us@gmail.com</p>";
-									}
-								}
-							?>
-						</div>
+						<!-- <div class="inner style2">
+							<div class="image main" data-position="center"><img src="images/banner.jpg" alt="" /></div>
+							<h3>Magna feugiat consequat</h3>
+							<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
+							<p>Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque. Lorem turpis ipsum dolor sit amet at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet blandit adipiscing arcu ante. Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa massa primis. Tempus condimentum tempus.</p>
+							<hr class="major" />
+							<h3>Etiam aliquam sed adipiscing</h3>
+							<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
+							<p>Faucibus volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque. Lorem turpis ipsum dolor sit amet at. Aliquet lorem porttitor interdum. Amet lacus. Aliquam lobortis faucibus blandit ac phasellus. In amet magna non interdum volutpat porttitor metus a ante ac neque. Nisi turpis. Commodo col. Interdum adipiscing mollis ut aliquam id ante adipiscing commodo integer arcu amet blandit adipiscing arcu ante. Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum.</p>
+						</div> -->
 					</section>
 
 				<!-- Footer -->

@@ -6,11 +6,11 @@
 -->
 <html>
 	<head>
-		<title>ISE 2023 Message sent</title>
+		<title>ISE 2023 Travel Grant</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon_io/favicon.ico">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon_io/favicon.ico">
 	</head>
 	<body class="is-preload">
 
@@ -18,7 +18,7 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
+					<header id="header">
 
 						<!-- Logo -->
 							<div class="logo">
@@ -85,7 +85,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="registration.html">Registration</a></li>
-                                <li><a href="travelgrant.html">Travel Grant</a></li>
+                                <li class="current"><a href="travelgrant.html">Travel Grant</a></li>
                                 <li><a href="program.html">Program</a></li>
                             </ul>
                         </nav>
@@ -94,27 +94,16 @@
 				<!-- Section -->
 					<section class="main alt">
 						<header>
-							<h1>Message sent</h1>
-							<p>Thank you for your message</p>
+							<h1>Travel Grant</h1>
+							<p>Please consider applying for a travel grant.</p>
 						</header>
 						<div class="inner style2">
-							<?php
-								if ($_SERVER["REQUEST_METHOD"] == "POST") {
-									$name = $_POST["name"];
-									$email = $_POST["email"];
-									$message = $_POST["message"];
-
-									$to = "ise2023us@gmail.com";
-									$subject = "New message from $name";
-									$body = "From: $name\nEmail: $email\nMessage:\n$message";
-
-									if (mail($to, $subject, $body)) {
-										echo "<p>Thank you for your message, $name. We'll get back to you as soon as possible. You can also email us directly at ise2023us@gmail.com.</p>";
-									} else {
-										echo "<p>Sorry, there was a problem sending your message. Please try again later or email us directly under ise2023us@gmail.com</p>";
-									}
-								}
-							?>
+							<div class="image main" data-position="center"><img src="images/banner.jpg" alt="" /></div>
+                            <p>As part of our commitment to promoting inclusivity and diversity in the field of endocytobiology, we are pleased to offer three travel grants to support attendance to the conference. We encourage applicants from underrepresented groups, including women, people of color, and those from low-income countries, to apply.</p>
+                            <p>The grant will cover up to $1,400 in transportation and accommodation costs for international participants and up to $1,000 for domestic participants. Additionally, we will waive the conference registration fee for grant recipients. We believe that this grant will provide a unique opportunity for scientists who may not have the financial means to attend the conference and gain access to valuable networking and learning opportunities.</p>
+                            <p>We invite applications from undergraduate students, graduate students, and postdoctoral researchers with a maximum of three years of experience. To apply for the travel grant, please submit a short statement (500 words or less) outlining your research interests, career goals, and how attending the ISE 2023 conference will benefit your professional development. Applicants should also provide a current CV or resume.</p>
+                            <p>Please submit your application via email to the conference committee at <a href="mailto:travelgrant@ise2023.us">travelgrant@ise2023.us</a> no later than <b>June 15, 2023</b>. We will review all applications and notify successful applicants by June 30, 2023.</p>
+                            <p>We look forward to welcoming you to the ISE 2023 conference and hope that this travel grant will help make attendance possible for those who might otherwise be unable to attend.</p>
 						</div>
 					</section>
 

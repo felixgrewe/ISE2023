@@ -6,11 +6,11 @@
 -->
 <html>
 	<head>
-		<title>ISE 2023 Message sent</title>
+		<title>ISE 2023 Homepage</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon_io/favicon.ico">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon_io/favicon.ico">
 	</head>
 	<body class="is-preload">
 
@@ -18,13 +18,12 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
+					<header id="header">
 
 						<!-- Logo -->
 							<div class="logo">
 								<a href="index.html"><strong>ISE</strong> Chicago 2023</a>
 							</div>
-
 						<!-- Nav -->
                         <nav id="nav">
                             <ul>
@@ -86,36 +85,48 @@
                                 </li>
                                 <li><a href="registration.html">Registration</a></li>
                                 <li><a href="travelgrant.html">Travel Grant</a></li>
-                                <li><a href="program.html">Program</a></li>
+                                <li class="current"><a href="program.html">Program</a></li>
                             </ul>
                         </nav>
 					</header>
 
+
 				<!-- Section -->
 					<section class="main alt">
 						<header>
-							<h1>Message sent</h1>
-							<p>Thank you for your message</p>
+							<h1>Program</h1>
+                            <p><b>On Sunday, September 10th, for the Welcome Reception, please enter the museum through the South Entrance. On every other conference day, please enter the museum through the West Entrance. To help with your orientation, please refer to this <a href="fm_map.pdf" target="_blank">map</a>.</b></p>
+                            <p class="actions">
+                                <a href="ISE23_schedule.pdf" target="_blank" class="button icon solid fa-download">Conference Program</a>
+                            </p>
+                            <h4>Day1, Sunday, Sept 10th</h4>
+                                <p>Welcome Reception (6pm - 10pm)</p>
+                            <h4>Day2, Monday, Sept 11th</h4>
+                                <p>Sessions<br>
+                                Moore Foundation Special Symposium</br>
+                                </p>
+                            <h4>Day3, Tuesday, Sept 12th</h4>
+                                <p>Sessions</br>
+                                Grainger Bioinformatics Center Symposium on Diversity of Symbiosis</br>
+                                ISE members' meeting</br>
+                                Group Photo</br>
+                                Poster Session</br>
+                                <a href="https://www.fieldmuseum.org/our-events/symbiosis-in-a-changing-world-lessons-from-dying-corals/panel-discussion-09-12-2023" target="_blank">Panel Discussion</a></p>
+                            <h4>Day4, Wednesday, Sept 13th</h4>
+                                <p>Sessions<br>
+                                Behind the Scenes Tours</br>
+                                Miescher-Ishida Award Ceremony</br>
+                                Conference Dinner (6pm - midnight)</p>
+                            <h4>Day5, Thursday, Sept 14th</h4>
+                                <p>Sessions</br>
+                                12:30pm Closing Remarks</p>
+                            <span class="image fit"><a href="fm_map.pdf" target="_blank"><img src="images/fm_map.jpg" alt="" /></a></span>
+                            <span class="image fit"><a href="museum_outside.pdf" target="_blank"><img src="images/museum_outside.jpg" alt="" /></a></span>
+
 						</header>
-						<div class="inner style2">
-							<?php
-								if ($_SERVER["REQUEST_METHOD"] == "POST") {
-									$name = $_POST["name"];
-									$email = $_POST["email"];
-									$message = $_POST["message"];
-
-									$to = "ise2023us@gmail.com";
-									$subject = "New message from $name";
-									$body = "From: $name\nEmail: $email\nMessage:\n$message";
-
-									if (mail($to, $subject, $body)) {
-										echo "<p>Thank you for your message, $name. We'll get back to you as soon as possible. You can also email us directly at ise2023us@gmail.com.</p>";
-									} else {
-										echo "<p>Sorry, there was a problem sending your message. Please try again later or email us directly under ise2023us@gmail.com</p>";
-									}
-								}
-							?>
-						</div>
+                            <!-- <div class="inner style2">
+                                <div class="image main" data-position="center"><img src="images/fm_map.jpg" alt="" /></div>
+                            </div> -->
 					</section>
 
 				<!-- Footer -->
